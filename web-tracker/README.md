@@ -1,6 +1,6 @@
-# DTDC Package Tracker
+# DTDC Shipment Tracker - Web Edition
 
-A modern, client-side web application for tracking DTDC packages with built-in cookie management for tracking history.
+A modern web application for tracking DTDC shipments with real-time updates, milestone visualization, and comprehensive timeline tracking. Built with React, Vite, and Supabase.
 
 ## Features
 
