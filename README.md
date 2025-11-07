@@ -18,31 +18,6 @@ A beautiful, cross-platform desktop application for tracking DTDC shipments with
 
 *Clean interface with search box and recent searches*
 
-### 🔍 Track Your Shipment
-<img src="screenshots/02-with-tracking-id.png" alt="Enter Tracking ID" width="800"/>
-
-*Enter your DTDC tracking number*
-
-### 📦 Tracking Results
-<img src="screenshots/03-tracking-results.png" alt="Tracking Results" width="800"/>
-
-*Comprehensive shipment information at a glance*
-
-### 🎯 Visual Milestones
-<img src="screenshots/04-milestones.png" alt="Milestone Progress" width="800"/>
-
-*Track your package journey with visual indicators*
-
-### 📅 Detailed Timeline
-<img src="screenshots/05-timeline.png" alt="Event Timeline" width="800"/>
-
-*Complete event history with locations and timestamps*
-
-### 🕒 Recent Searches
-<img src="screenshots/06-home-with-recent.png" alt="Recent Searches" width="800"/>
-
-*Quick access to your tracking history*
-
 ### ℹ️ About Page
 <img src="screenshots/07-about-page.png" alt="About Page" width="800"/>
 
