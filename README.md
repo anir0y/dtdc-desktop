@@ -114,11 +114,14 @@ chmod +x dtdc-desktop
 2. **Enter tracking number** - Type your DTDC tracking ID in the search box
 3. **Track shipment** - Click "🔍 Track Shipment" button or press Enter
 4. **View results** - See visual milestones and detailed timeline
-5. **Recent searches** - Click any recent search to instantly track it again
-6. **Home button** - Click "🏠 Back to Home" to start a new search
-7. **Switch shipments** - Click recent searches to switch between tracked packages
-8. **Load more events** - Click "Load More Events" for additional timeline history
-9. **About tab** - Click "About" to view app information
+5. **Recent searches** - After your first search, recent tracking IDs appear as clickable chips
+6. **Quick re-track** - Click any recent search to instantly track it again
+7. **Home button** - Click "🏠 Back to Home" to start a new search
+8. **Switch shipments** - Click different recent searches to switch between tracked packages
+9. **Load more events** - Click "Load More Events" for additional timeline history
+10. **About tab** - Click "About" to view app information
+
+> **Note:** Recent searches will appear after you track your first shipment. They're saved locally and persist between app sessions.
 
 ## 🎨 Tabs
 
