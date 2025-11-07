@@ -19,6 +19,27 @@ const (
 	requestTimeout = 15 * time.Second
 )
 
+// getLogFilePath returns the full path to the log file
+// For built apps, it uses user's home directory
+// For dev mode, it uses current directory
+func getLogFilePath() string {
+	// Try to use user's home directory for built apps
+	homeDir, err := os.UserHomeDir()
+	if err != nil {
+		// Fallback to current directory
+		return filepath.Clean(logFileName)
+	}
+
+	// Create .dtdc directory in user's home
+	appDir := filepath.Join(homeDir, ".dtdc")
+	if err := os.MkdirAll(appDir, 0o755); err != nil {
+		// Fallback to current directory
+		return filepath.Clean(logFileName)
+	}
+
+	return filepath.Join(appDir, logFileName)
+}
+
 // trackReq payload sent to DTDC
 type trackReq struct {
 	TrackType   string `json:"trackType"`
@@ -172,7 +193,7 @@ func appendLog(trackNumber string, reqJSON []byte, statusCode int, errObj error)
 		entry.Error = errObj.Error()
 	}
 
-	logPath := filepath.Clean(logFileName)
+	logPath := getLogFilePath()
 	f, err := os.OpenFile(logPath, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0o644)
 	if err != nil {
 		return fmt.Errorf("open log file: %w", err)
@@ -308,7 +329,7 @@ func getRecentSearches(limit int) ([]string, error) {
 		limit = 10
 	}
 
-	logPath := filepath.Clean(logFileName)
+	logPath := getLogFilePath()
 	file, err := os.Open(logPath)
 	if err != nil {
 		if os.IsNotExist(err) {
