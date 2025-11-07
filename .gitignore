@@ -1,3 +1,52 @@
-build/bin
-node_modules
-frontend/dist
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# Wails build directory
+build/bin/
+
+# Frontend
+node_modules/
+frontend/dist/
+frontend/node_modules/
+frontend/.vite/
+frontend/package-lock.json
+package-lock.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.DS_Store
+
+# Logs
+*.log
+*.jsonl
+dtdc_log.jsonl
+
+# Temporary files
+*.tmp
+
+# Development artifacts
+appicon.png
+create_mail_icon.py
+APP_READY.md
+THEME_GUIDE.md
