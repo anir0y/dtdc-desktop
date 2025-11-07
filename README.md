@@ -7,6 +7,8 @@ A beautiful, cross-platform desktop application for tracking DTDC shipments with
 ![Framework](https://img.shields.io/badge/framework-Wails%20v2.10.2-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
+> 🌐 **Web Version Available:** Try our web-based tracker at [https://dtdc-track.anir0y.in/](https://dtdc-track.anir0y.in/)
+
 ## 📸 Screenshots
 
 <div align="center">
